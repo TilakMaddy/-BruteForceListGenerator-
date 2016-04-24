@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox blendMode="DIFFERENCE" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="password.FirstLayoutController">
+  <children>
+    <MenuBar prefHeight="21.0" prefWidth="640.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+               <items>
+                   <MenuItem fx:id="attack" disable="true" mnemonicParsing="false" text="Attack ..." />
+                  <MenuItem fx:id="exitNow" mnemonicParsing="false" onAction="#closeProgram"  text="Exit App.." />                  
+               </items> 
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About  Us" />
+                  <MenuItem mnemonicParsing="false" text="How to use ?" />
+                  <MenuItem mnemonicParsing="false" text="Update version" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="imaegView" fitHeight="150.0" fitWidth="200.0" layoutX="401.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image fx:id="victimFace" url="@../images/uk.png" />
+               </image>             
+            </ImageView>               
+            <Button fx:id="startMotherhipButton" layoutX="220.0" layoutY="310.0" mnemonicParsing="false" onAction="#startMothership" prefHeight="25.0" prefWidth="200.0" text="Iniciar la nave Nodriza" />
+            <Label layoutX="24.0" layoutY="51.0" prefHeight="25.0" prefWidth="108.0" text="First Name" />
+            <Label layoutX="24.0" layoutY="82.0" prefHeight="25.0" prefWidth="108.0" text="Last Name" />
+            <Label layoutX="24.0" layoutY="114.0" prefHeight="25.0" prefWidth="108.0" text="Padme's Name" />
+            <Label layoutX="24.0" layoutY="224.0" prefHeight="25.0" prefWidth="108.0" text="Birthday" />
+            <TextField fx:id="firstName" layoutX="166.0" layoutY="51.0" />
+            <TextField fx:id="lastName" layoutX="166.0" layoutY="82.0" promptText="(or)nick-name" />
+            <TextField fx:id="padmesName" layoutX="166.0" layoutY="114.0" promptText="don't be shy ." />
+            <TextField fx:id="phNumber" layoutX="166.0" layoutY="188.0" promptText="w/o 2 digit int'l code" />
+            <Label layoutX="24.0" layoutY="192.0" prefHeight="17.0" prefWidth="114.0" text="Contact Number" />
+            <DatePicker fx:id="bDay" layoutX="166.0" layoutY="224.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="188.0" text="Names" textFill="#dd210f">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <Label layoutX="7.0" layoutY="154.0" prefHeight="25.0" prefWidth="108.0" text="Others" textFill="#dd0b7f">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <Label layoutX="406.0" layoutY="228.0" text="M/F" />
+            <ToggleButton fx:id="gender" layoutX="476.0" layoutY="224.0" mnemonicParsing="false" text="Male or Female" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
