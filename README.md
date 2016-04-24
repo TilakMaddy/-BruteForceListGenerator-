@@ -18,7 +18,7 @@ So  I wanna wish you:
 Holy Cow ! The legal disclaimer is that we the developers are not responsible for the misuse of this tool .Please use it wisely
 and do not blame us for unethical purposes.
 
-**NOTE: ** This tool should be used only for ethical purposes.
+**NOTE:**  This tool should be used only for ethical purposes.
 
 
 
